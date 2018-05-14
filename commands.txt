@@ -16,5 +16,8 @@ git add foldername    -> adds folder contents to staging area
 git add *.html	      -> adds evertything with ext html
 git add . 	      -> adds everything in the current folder to staging area
 
+git mv previousNamefile.ext newNamefile.ext     -> renames file
+git rm Namefile.ext  				-> deletes file
+
 git commit -m "text description of the commit"
 
