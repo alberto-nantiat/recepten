@@ -51,4 +51,18 @@ git checkout master  		-> going back to the most recent commit
 git checkout 1b1d593 filename 	-> reverses only that file to the indicated version (to save it then do the normal add and commit procedure)
 git checkout head filename	-> brings the file again to the last committed version 
 
+Tags
+ git tag tagName 1b1d593  -> assigns tagName to nominated version
+git log --pretty=format:"%h %ad %s (%an) %d" --date=short  -> %d = see tag
+
+
+Branches
+git branch branchName  -> creates a branch called branchName
+git branch -> gets list branches
+git checkout branchName  -> activates branch
+
+
+ 
+
+
 
