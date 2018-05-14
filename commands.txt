@@ -1,0 +1,20 @@
+DOS
+dir   -> see all subnodes current folder
+md    -> creates a new folder
+
+
+
+
+
+GIT
+
+git init     -> initialises a repository
+git status   -> gives status
+
+git add filename.ext  -> adds the file to the staging area (ready to be versioned)
+git add foldername    -> adds folder contents to staging area
+git add *.html	      -> adds evertything with ext html
+git add . 	      -> adds everything in the current folder to staging area
+
+git commit -m "text description of the commit"
+
