@@ -50,3 +50,4 @@ git checkout 1b1d593 -> where 1b1d593 is the short hash of the required version
 git checkout master  -> going back to the most recent commit
 
 
+bla bla bla bla
