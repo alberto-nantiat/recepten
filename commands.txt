@@ -8,9 +8,32 @@ md    -> creates a new folder
 
 GIT
 
+Configuration
+git config --global user.name "YourName"      -> insert your name (used for commits attribution, no login)
+git config --global user.email "YourEmail"    -> insert your mail (used for commits attribution, no login)
+
+
+Alias
+git config --global alias.nameAlias "all command line to be aliased except git" -> configs an alias for a command line
+git nameAlias  -> calls the alias
+
+Help
+git --help				      -> see list available commands
+
+
+General
 git init     -> initialises a repository
 git status   -> gives status
 
+Log - History
+git log	     			-> history of all commits, with name, author, date, descriptor
+git log --pretty=oneline 	-> history of all commits, one per line, with name, descriptor
+git log --pretty=oneline --since="1 hour ago"
+git log --pretty=oneline --until="1 hour ago" 
+git log --pretty=oneline --author="Joe Dalton" 
+git log --pretty=format:"%h %ad %s (%an)" --date=short 
+
+Adding files to the staging area
 git add filename.ext  -> adds the file to the staging area (ready to be versioned)
 git add foldername    -> adds folder contents to staging area
 git add *.html	      -> adds evertything with ext html
@@ -19,5 +42,11 @@ git add . 	      -> adds everything in the current folder to staging area
 git mv previousNamefile.ext newNamefile.ext     -> renames file
 git rm Namefile.ext  				-> deletes file
 
+Committing
 git commit -m "text description of the commit"
+
+Other versions
+git checkout 1b1d593 -> where 1b1d593 is the short hash of the required version
+git checkout master  -> going back to the most recent commit
+
 
