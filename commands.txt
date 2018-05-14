@@ -46,8 +46,9 @@ Committing
 git commit -m "text description of the commit"
 
 Other versions
-git checkout 1b1d593 -> where 1b1d593 is the short hash of the required version
-git checkout master  -> going back to the most recent commit
+git checkout 1b1d593 		-> where 1b1d593 is the short hash of the required version
+git checkout master  		-> going back to the most recent commit
+git checkout 1b1d593 filename 	-> reverses only that file to the indicated version (to save it then do the normal add and commit procedure)
+git checkout head filename	-> brings the file again to the last committed version 
 
 
-bla bla bla bla
